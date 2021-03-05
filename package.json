@@ -9,7 +9,10 @@
 		"package": "electron-forge package",
 		"make": "electron-forge make",
 		"publish": "electron-forge publish",
-		"lint": "echo \"No linting configured\""
+		"lint": "echo \"No linting configured\"",
+		"package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --prune=true --out=release-builds",
+		"package-win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --prune=true --out=release-builds",
+		"package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --prune=true --out=release-builds"
 	},
 	"keywords": [],
 	"author": "Adarsh Goyal",
@@ -21,7 +24,7 @@
 				{
 					"name": "@electron-forge/maker-squirrel",
 					"config": {
-						"name": "tron_forge"
+						"name": "task-app"
 					}
 				},
 				{
@@ -43,6 +46,7 @@
 	},
 	"dependencies": {
 		"cric-live": "^1.0.19",
+		"electron-packager": "^15.2.0",
 		"electron-squirrel-startup": "^1.0.0",
 		"twit": "^2.2.11",
 		"twitter": "^1.7.1"
