@@ -10,7 +10,6 @@ const params = {
 const stream = T.stream("statuses/filter", params).on(
 	"tweet",
 	async (tweet) => {
-		console.log(tweet.id);
 		const tweetStream = document.getElementById("tweetStream");
 		const tweetEl = document.createElement("div");
 		tweetEl.className = "card my-4";
