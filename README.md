@@ -1,5 +1,23 @@
 # Electron Task
 
+
+## Installation
+
+```bash
+$ npm i or yarn 
+```
+
+## Running the app
+
+```bash
+# development
+#To start node server under the electron app
+$ yarn start 
+```
+
+## Stay in touch
+- Author - [Adarsh Goyal](http://adarshgoyal.me/
+
 Problem Statement
 
 Create a desktop application with one window and with 2 sections in it,
