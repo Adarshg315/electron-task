@@ -11,7 +11,6 @@ $ npm i or yarn
 
 ```bash
 # development
-#To start node server under the electron app
 $ yarn start 
 ```
 
