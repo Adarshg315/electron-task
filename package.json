@@ -45,9 +45,15 @@
 		}
 	},
 	"dependencies": {
+		"axios": "^0.21.1",
+		"cors": "^2.8.5",
 		"cric-live": "^1.0.19",
+		"cric-live-json": "^1.0.5",
+		"cricket-api-node": "^1.0.1",
 		"electron-packager": "^15.2.0",
 		"electron-squirrel-startup": "^1.0.0",
+		"express": "^4.17.1",
+		"http": "^0.0.1-security",
 		"twit": "^2.2.11",
 		"twitter": "^1.7.1"
 	},

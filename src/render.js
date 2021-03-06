@@ -25,3 +25,34 @@ const stream = T.stream("statuses/filter", params).on(
 		tweetStream.appendChild(tweetEl);
 	}
 );
+
+// const axios = require("axios");
+
+// const response = fetch(
+// 	"https://cricket-api.vercel.app/cri.php?url=https://m.cricbuzz.com/cricket-commentary/32573/vic-vs-tas-15th-match-sheffield-shield-2020-21"
+// );
+
+// console.log(response);
+// const reader = response.body.getReader();
+
+// while (true) {
+// 	const { value, done } = reader.read();
+// 	if (done) break;
+// 	console.log("Received", value);
+// }
+
+const score = require("cricket-api-node");
+
+score
+	.match(
+		"https://cricket-api.vercel.app/cri.php?url=https://m.cricbuzz.com/cricket-commentary/32573/vic-vs-tas-15th-match-sheffield-shield-2020-21"
+	)
+	.then((live) => {
+		console.log(live);
+	});
+
+// var cricObj = require("cric-live-json");
+
+// cricObj.getLiveScore(2).then(function (liveScore) {
+// 	console.log("liveScore", liveScore);
+// });
