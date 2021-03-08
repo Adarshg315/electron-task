@@ -1,5 +1,6 @@
 # Electron Task
-final exe-> https://github.com/Adarshg315/electron-task/blob/main/task-app.exe
+final exe-> https://github.com/Adarshg315/electron-task/blob/main/task-app.exe <br />
+      deb-> https://github.com/Adarshg315/electron-task/blob/main/task-app_1.0.0_amd64.deb
 
 ## Installation
 
